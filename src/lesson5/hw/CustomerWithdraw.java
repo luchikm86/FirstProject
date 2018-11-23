@@ -28,5 +28,5 @@ public class CustomerWithdraw {
         }
        int result = balances[clI] - amount;
         return result;
-    }
+    } 
 }
