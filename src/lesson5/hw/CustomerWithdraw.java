@@ -7,7 +7,7 @@ public class CustomerWithdraw {
         String[] names = {"Jack", "Ann", "Denis", "Andrey", "Nikolay", "Irina", "John"};
         int[] balances = {100, 500, 8432, -99, 12000, -54, 0};
 
-        int bal = withdraw(names, balances, "Ann", 100);
+        int bal = withdraw(names, balances, "Ann", 1400);
         System.out.println(bal);
         System.out.println(Arrays.toString(balances));
     }
@@ -27,8 +27,7 @@ public class CustomerWithdraw {
         for (int elem : balances){
             if (elem == bal) {
                 if (amount > bal){
-                    System.out.println(-1);
-                    break;
+                    return -1;
                 }
                     bal -= amount;
             }
