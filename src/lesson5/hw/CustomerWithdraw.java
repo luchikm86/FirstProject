@@ -13,20 +13,20 @@ public class CustomerWithdraw {
     }
 
     static int withdraw(String[] clients, int[] balances, String client, int amount){
-        int clI = 0;
+        int index = 0;
         for (String elem : clients){
             if (elem.equals(client)){
                 break;
             }
-            clI++;
+            index++;
         }
-        int bal = balances[clI];
+        int bal = balances[index];
         if (amount > bal){
             return -1;
         }else {
 
         }
-       int result = balances[clI] - amount;
+       int result = balances[index] - amount;
         return result;
-    } 
+    }
 }
