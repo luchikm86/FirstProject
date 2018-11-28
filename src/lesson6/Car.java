@@ -8,6 +8,7 @@ public class Car {
     String ownerName;
     double weight;
     int horsePower;
+    Integer into;
 
 
     //2 constructor

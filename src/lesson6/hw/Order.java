@@ -1,5 +1,7 @@
 package lesson6.hw;
 
+import lesson7.hw.DemoHomeWork;
+
 import java.util.Date;
 
 public class Order {
@@ -46,5 +48,11 @@ public class Order {
             result = true;
         }
         return result;
+    }
+
+    public static void main(String[] args) {
+        Order order = new Order(100, new Date(), false, new Date(), "K", "U", "Buy");
+        System.out.println(order.isValidType());
+        DemoHomeWork demoHomeWork = new DemoHomeWork();
     }
 }
