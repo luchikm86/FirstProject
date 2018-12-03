@@ -6,5 +6,6 @@ public class Demo {
 
         Adder adder = new Adder();
         System.out.println(adder.check(array));
+        System.out.println(adder.add(10,-2));
     }
 }

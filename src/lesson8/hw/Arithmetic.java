@@ -2,9 +2,9 @@ package lesson8.hw;
 
 public class Arithmetic {
     public boolean check(int[] array) {
-        int indexOfMax = 0;
-        int indexOfMin = 0;
-        int sumIndexOfMaxMin;
+        long indexOfMax = 0;
+        long indexOfMin = 0;
+        long sumIndexOfMaxMin;
         boolean checkSum = false;
 
         // поиск максимального и минимального элемента в масиве
