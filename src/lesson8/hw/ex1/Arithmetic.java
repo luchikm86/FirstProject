@@ -1,10 +1,10 @@
-package lesson8.hw;
+package lesson8.hw.ex1;
 
 public class Arithmetic {
     public boolean check(int[] array) {
-        long indexOfMax = 0;
-        long indexOfMin = 0;
-        long sumIndexOfMaxMin;
+        int indexOfMax = 0;
+        int indexOfMin = 0;
+        int sumIndexOfMaxMin;
         boolean checkSum = false;
 
         // поиск максимального и минимального элемента в масиве
