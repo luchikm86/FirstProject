@@ -1,4 +1,4 @@
-package lesson8.hw.ex1;
+package lesson8.hw.Arithmetics;
 
 public class Adder extends Arithmetic{
     public long add(int a, int b) {

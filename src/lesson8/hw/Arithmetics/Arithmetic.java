@@ -1,4 +1,4 @@
-package lesson8.hw.ex1;
+package lesson8.hw.Arithmetics;
 
 public class Arithmetic {
     public boolean check(int[] array) {

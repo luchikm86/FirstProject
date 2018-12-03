@@ -1,4 +1,4 @@
-package lesson8.hw.ex2;
+package lesson8.hw.Hierarchy;
 
 import java.util.Date;
 
