@@ -111,6 +111,21 @@ public class UserRepository {
             return null;
     }
 
+    public User findById(long id) {
+        int index = -1;
+        for(int i = 0; i < users.length; i++) {
+            if(users[i] != null){
+                if(users[i].getId() == id) {
+                    index = i;
+                }
+            }
+        }
+        if(index >= 0)
+            return users[index];
+        else
+            return null;
+    }
+
     public User save(User user) {
         if(user == null)
             return null;
@@ -132,18 +147,25 @@ public class UserRepository {
         }
     }
 
-    private User findById(long id) {
-        int index = -1;
-        for(int i = 0; i < users.length; i++) {
-            if(users[i] != null){
-                if(users[i].getId() == id) {
-                    index = i;
+    public User update(User user) {
+        if (user != null) {
+            for (int i = 0; i < users.length; i++) {
+                if (findById(user.getId()) != null) {
+                    return users[i] = user;
                 }
             }
         }
-        if(index >= 0)
-            return users[index];
-        else
-            return null;
+        return  null;
+    }
+
+    public void delete(long id) {
+        if (findById(id) != null) {
+            for (int i = 0; i < users.length; i++) {
+                if (users[i].getId() == id) {
+                    users[i] = null;
+                    break;
+                }
+            }
+        }
     }
 }
