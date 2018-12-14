@@ -33,6 +33,6 @@ public class ElectronicsOrder extends Order{
         if (totalPrice > 1000) {
             setTotalPrice(totalPrice - (totalPrice * 0.05));
         }
-        System.out.println(totalPrice);
+//        System.out.println(totalPrice);
     }
 }
