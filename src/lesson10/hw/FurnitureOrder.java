@@ -31,6 +31,6 @@ public class FurnitureOrder extends Order{
 
         setTotalPrice(totalPrice);
 
-        System.out.println(getTotalPrice());
+//        System.out.println(getTotalPrice());
     }
 }
