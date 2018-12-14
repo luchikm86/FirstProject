@@ -17,15 +17,18 @@ public class FurnitureOrder extends Order{
                 setDateConfirmed(new Date());
             }
         }
-//        System.out.println(getDateConfirmed());
     }
 
     @Override
     public void calculatePrice() {
+        double shippingCost = 0;
         if(getTotalPrice() < 5000) {
-            setTotalPrice(getTotalPrice() * 0.05);
+            shippingCost = getBasePrice() * 0.05;
         } else
-            setTotalPrice(getTotalPrice() * 0.02);
-//        System.out.println(getTotalPrice());
+            shippingCost = getBasePrice() * 0.02;
+
+        setTotalPrice(getTotalPrice() + shippingCost);
+
+        System.out.println(getTotalPrice());
     }
 }

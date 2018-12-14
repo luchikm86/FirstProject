@@ -15,12 +15,10 @@ public class Demo {
         FurnitureOrder furnitureOrder1 = new FurnitureOrder("Товар 2", new Date(), "Львов", "Одесса", 1000, customer2, "Code1");
 
 
-        furnitureOrder.validateOrder();
         furnitureOrder.calculatePrice();
 
         System.out.println(" ");
 
-        electronicsOrder.validateOrder();
         electronicsOrder.calculatePrice();
 
 
