@@ -15,10 +15,11 @@ public class ElectronicsOrder extends Order{
         if (getShipFromCity() == "Киев" || getShipFromCity() == "Одесса"|| getShipFromCity() == "Днепр"|| getShipFromCity() == "Харьков") {
             if (getShipToCity() == "Киев" || getShipToCity() == "Одесса" || getShipToCity() == "Днепр" || getShipToCity() == "Харьков") {
                 if (getCustomerOwned().getGender() == "Женский" && getBasePrice() >= 100) {
-                    setDateConfirmed(new Date());
+                    confirmShipping();
                 }
             }
         }
+        System.out.println(getDateConfirmed());
     }
 
     @Override
@@ -33,5 +34,6 @@ public class ElectronicsOrder extends Order{
         if (totalPrice > 1000) {
             setTotalPrice(totalPrice - (totalPrice * 0.05));
         }
+        System.out.println(totalPrice);
     }
 }

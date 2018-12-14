@@ -14,9 +14,10 @@ public class FurnitureOrder extends Order{
     public void validateOrder() {
         if (getShipFromCity() == "Киев" || getShipFromCity() == "Львов") {
             if (getBasePrice() > 500 && !getCustomerOwned().getName().equals("Тест")) {
-                setDateConfirmed(new Date());
+                confirmShipping();
             }
         }
+        System.out.println(getDateConfirmed());
     }
 
     @Override
@@ -25,5 +26,6 @@ public class FurnitureOrder extends Order{
             setTotalPrice(getTotalPrice() * 0.05);
         } else
             setTotalPrice(getTotalPrice() * 0.02);
+        System.out.println(getTotalPrice());
     }
 }
