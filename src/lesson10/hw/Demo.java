@@ -14,12 +14,12 @@ public class Demo {
         FurnitureOrder furnitureOrder = new FurnitureOrder("Товар 1", new Date(), "Киев", "Харьков", 2000, customer3, "Code");
         FurnitureOrder furnitureOrder1 = new FurnitureOrder("Товар 2", new Date(), "Львов", "Одесса", 1000, customer2, "Code1");
 
-
-        furnitureOrder.calculatePrice();
-
-        System.out.println(" ");
-
-        electronicsOrder.calculatePrice();
+//
+//        furnitureOrder.calculatePrice();
+//
+//        System.out.println(" ");
+//
+//        electronicsOrder.calculatePrice();
 
 
     }

@@ -32,6 +32,10 @@ public class ElectronicsOrder extends Order{
         double totalPrice = shippingCost + getBasePrice();
         if (getBasePrice() > 1000) {
             setTotalPrice(totalPrice - (totalPrice * 0.05));
-        }
+        } else
+            setTotalPrice(totalPrice);
+
+//        System.out.println(getTotalPrice());
+
     }
 }
