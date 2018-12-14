@@ -22,13 +22,15 @@ public class FurnitureOrder extends Order{
     @Override
     public void calculatePrice() {
         double shippingCost = 0;
-        if(getTotalPrice() < 5000) {
+        if(getBasePrice() < 5000) {
             shippingCost = getBasePrice() * 0.05;
         } else
             shippingCost = getBasePrice() * 0.02;
 
-        setTotalPrice(getTotalPrice() + shippingCost);
+        double totalPrice = shippingCost + getBasePrice();
 
-//        System.out.println(getTotalPrice());
+        setTotalPrice(totalPrice);
+
+        System.out.println(getTotalPrice());
     }
 }
