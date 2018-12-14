@@ -15,7 +15,7 @@ public class ElectronicsOrder extends Order{
         if (getShipFromCity() == "Киев" || getShipFromCity() == "Одесса"|| getShipFromCity() == "Днепр"|| getShipFromCity() == "Харьков") {
             if (getShipToCity() == "Киев" || getShipToCity() == "Одесса" || getShipToCity() == "Днепр" || getShipToCity() == "Харьков") {
                 if (getCustomerOwned().getGender() == "Женский" && getBasePrice() >= 100) {
-                    confirmShipping();
+                    setDateConfirmed(new Date());
                 }
             }
         }
