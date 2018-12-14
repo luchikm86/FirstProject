@@ -17,7 +17,7 @@ public class FurnitureOrder extends Order{
                 setDateConfirmed(new Date());
             }
         }
-        System.out.println(getDateConfirmed());
+//        System.out.println(getDateConfirmed());
     }
 
     @Override
@@ -26,6 +26,6 @@ public class FurnitureOrder extends Order{
             setTotalPrice(getTotalPrice() * 0.05);
         } else
             setTotalPrice(getTotalPrice() * 0.02);
-        System.out.println(getTotalPrice());
+//        System.out.println(getTotalPrice());
     }
 }
