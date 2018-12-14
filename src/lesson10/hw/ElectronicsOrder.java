@@ -34,8 +34,5 @@ public class ElectronicsOrder extends Order{
             setTotalPrice(totalPrice - (totalPrice * 0.05));
         } else
             setTotalPrice(totalPrice);
-
-//        System.out.println(getTotalPrice());
-
     }
 }
