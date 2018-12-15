@@ -15,13 +15,19 @@ public class Demo {
         Room room7 = new Room(25947, 88, 2,  new Date(), "AquaParkResort", "SharmAlSheih");
 
         Room[] rooms = {room1, room2, room3, room4, room5, room6, room7};
+        Room[] rooms1 = {room1, room3, room4, room5, room7};
+        Room[] rooms2 = {room1, room2, room4, room5, room6};
+
 
         BookingComAPI bookingCompAPI = new BookingComAPI(rooms);
         System.out.println(Arrays.toString(bookingCompAPI.findRooms(100, 2, "SharmAlSheih", "AquaParkResort")));
 
-        TripAdvisorAPI tripAdvisorAPI = new TripAdvisorAPI(rooms);
+        TripAdvisorAPI tripAdvisorAPI = new TripAdvisorAPI(rooms1);
 
-        GoogleAPI googleAPI = new GoogleAPI(rooms);
+        GoogleAPI googleAPI = new GoogleAPI(rooms2);
+
+        API[] api = new API[]{bookingCompAPI, tripAdvisorAPI, googleAPI};
+        Controller controller = new Controller(api);
 
     }
 }
