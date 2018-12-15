@@ -1,9 +1,9 @@
 package lesson11.hw;
 
-public class BookingCompAPI implements API{
+public class BookingComAPI implements API{
     private Room[] rooms;
 
-    public BookingCompAPI(Room[] rooms) {
+    public BookingComAPI(Room[] rooms) {
         this.rooms = rooms;
     }
 

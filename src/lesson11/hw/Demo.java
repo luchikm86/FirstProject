@@ -13,7 +13,7 @@ public class Demo {
 
         Room[] rooms = {room1, room2, room3, room4, room5, room6, room7};
 
-        BookingCompAPI bookingCompAPI = new BookingCompAPI(rooms);
+        BookingComAPI bookingCompAPI = new BookingComAPI(rooms);
 
         TripAdvisorAPI tripAdvisorAPI = new TripAdvisorAPI(rooms);
 
