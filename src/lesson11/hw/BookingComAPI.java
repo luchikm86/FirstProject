@@ -1,7 +1,5 @@
 package lesson11.hw;
 
-import java.util.Arrays;
-
 public class BookingComAPI implements API{
     private Room[] rooms;
 
