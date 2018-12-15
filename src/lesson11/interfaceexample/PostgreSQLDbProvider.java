@@ -4,16 +4,16 @@ public class PostgreSQLDbProvider implements DbProvider {
 
     @Override
     public void connectToDb() {
-        //some logic
+        //some logic for postage
     }
 
     @Override
     public void disconnectFromDb() {
-        //some logic
+        //some logic for postage
     }
 
     @Override
     public void encryptDate() {
-        //some logic
+        //some logic for postage
     }
 }

@@ -4,16 +4,16 @@ public class OracleDbProvider implements DbProvider {
 
     @Override
     public void connectToDb() {
-        //some logic
+        //some logic for oracle
     }
 
     @Override
     public void disconnectFromDb() {
-        //some logic
+        //some logic for oracle
     }
 
     @Override
     public void encryptDate() {
-        //some logic
+        //some logic for oracle
     }
 }

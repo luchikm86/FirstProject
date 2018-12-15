@@ -9,11 +9,11 @@ public class MySQLProvider implements DbProvider {
 
     @Override
     public void disconnectFromDb() {
-        //some logic
+        //some logic for mysql
     }
 
     @Override
     public void encryptDate() {
-        //some logic
+        //some logic for mysql
     }
 }
