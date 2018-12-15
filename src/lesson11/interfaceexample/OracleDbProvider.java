@@ -13,7 +13,7 @@ public class OracleDbProvider implements DbProvider {
     }
 
     @Override
-    public void encryptDate() {
+    public void encryptData() {
         //some logic for oracle
     }
 }

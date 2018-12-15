@@ -13,7 +13,7 @@ public class PostgreSQLDbProvider implements DbProvider {
     }
 
     @Override
-    public void encryptDate() {
+    public void encryptData() {
         //some logic for postage
     }
 }

@@ -6,6 +6,6 @@ public interface DbProvider {
 
     void disconnectFromDb();
 
-    void encryptDate();
+    void encryptData();
 
 }

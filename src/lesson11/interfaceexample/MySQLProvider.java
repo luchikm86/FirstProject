@@ -13,7 +13,7 @@ public class MySQLProvider implements DbProvider {
     }
 
     @Override
-    public void encryptDate() {
+    public void encryptData() {
         //some logic for mysql
     }
 }
