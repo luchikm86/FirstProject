@@ -22,7 +22,7 @@ public class GoogleAPI implements API {
         for (Room room : rooms) {
             if (room != null && price > 0 && room.getPrice() == price &&
                     room.getPersons() == persons && room.getCityName().equals(city) && room.getHotelName().equals(hotel)) {
-                result[index] = rooms[index];
+                result[index] = room;
                 index++;
             }
         }
