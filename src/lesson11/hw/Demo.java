@@ -19,8 +19,5 @@ public class Demo {
 
         GoogleAPI googleAPI = new GoogleAPI(rooms);
 
-
-
-
     }
 }
