@@ -5,7 +5,7 @@ import java.util.Date;
 public class Room {
     private long id;
     private int price;
-    private int person;
+    private int persons;
     private Date dateAvailableFrom;
     private String hotelName;
     private String cityName;
@@ -13,7 +13,7 @@ public class Room {
     public Room(long id, int price, int person, Date dateAvailableFrom, String hotelName, String cityName) {
         this.id = id;
         this.price = price;
-        this.person = person;
+        this.persons = person;
         this.dateAvailableFrom = dateAvailableFrom;
         this.hotelName = hotelName;
         this.cityName = cityName;
@@ -27,8 +27,8 @@ public class Room {
         return price;
     }
 
-    public int getPerson() {
-        return person;
+    public int getPersons() {
+        return persons;
     }
 
     public Date getDateAvailableFrom() {

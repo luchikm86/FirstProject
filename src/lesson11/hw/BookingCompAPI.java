@@ -12,7 +12,7 @@ public class BookingCompAPI implements API{
         int count = 0;
         for (Room room : rooms) {
             if (room != null && price > 0 && room.getPrice() >= price - 100 &&
-                    room.getPrice() <= price + 100 && room.getPerson() == persons &&
+                    room.getPrice() <= price + 100 && room.getPersons() == persons &&
                     room.getCityName() == city && room.getHotelName() == hotel) {
                 count++;
             }
@@ -22,7 +22,7 @@ public class BookingCompAPI implements API{
         int index = 0;
         for (Room room : rooms) {
             if (room != null && price > 0 && room.getPrice() >= price - 100 &&
-                    room.getPrice() <= price + 100 && room.getPerson() == persons &&
+                    room.getPrice() <= price + 100 && room.getPersons() == persons &&
                     room.getCityName().equals(city) && room.getHotelName().equals(hotel)) {
                 result[index] = rooms[index];
                 index++;
