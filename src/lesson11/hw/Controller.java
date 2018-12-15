@@ -8,9 +8,26 @@ public class Controller {
     }
 
     public Room[] requestRooms(int price, int persons, String city, String hotel) {
+        int count = 0;
+        for (API api : apis) {
+            if (api != null) {
+                for (Room room : api.findRooms(price, persons, city, hotel)) {
+                    count++;
+                }
+            }
+        }
 
-
-        return null;
+        Room[] result = new Room[count];
+        int index = 0;
+        for (API api : apis) {
+            if (api != null) {
+                for (Room room : api.findRooms(price, persons, city, hotel)) {
+                    result[index] = room;
+                    index++;
+                }
+            }
+        }
+        return result;
     }
 
     public Room[] check(API api1, API api2) {
