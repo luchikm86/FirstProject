@@ -13,5 +13,10 @@ public class Demo {
         Checker checker = new Checker();
         System.out.println(checker.checkCompanyName(company.getName()));
 //        System.out.println(checker.companyNameValidatedCount);
+
+
+
+
+
     }
 }
