@@ -15,7 +15,7 @@ public class Checker {
 
     public boolean checkCompanyName(String companyName) {
 
-//        if (compnyName == "Google" || compnyName == "Amazone")
+//        if (companyName == "Google" || companyName == "Amazone")
 //            return false;
 //        return true;
         if (companyNameValidatedCount > 10)

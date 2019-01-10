@@ -4,8 +4,6 @@ import lesson6.Car;
 import lesson6.DbConnector;
 import lesson6.User;
 
-import javax.jws.soap.SOAPBinding;
-
 public class Demo {
     public static void main(String[] args) {
         //two option to create object
